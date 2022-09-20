@@ -1,5 +1,5 @@
 
-import CreateAccount from './components/create-account/CreateAccount'
+import CreateAccount from './components/create-account-page/CreateAccount'
 
 
 

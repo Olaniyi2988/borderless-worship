@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../components/create-account/createAccount.css';
+import '../component-css/bg-side-img.css';
 // import image3 from '../../images/image 3.png'
 import logo from '../../images/borderless-logo.svg'
 
@@ -7,7 +7,7 @@ const CreateAccount = () => {
   return (
     <div className='w-[100%] h-[100vh] flex box-border me'>
       <div className="md:w-[50%] md:block hidden">
-        <div className="bg-image text-centen">
+        <div className="bg-image text-center">
           <span>
             <img src={logo} alt="" />
             <h1 className='font-extrabold text-5xl text-white mt-10'>BORDERLESS <br /> WORSHIP</h1>
