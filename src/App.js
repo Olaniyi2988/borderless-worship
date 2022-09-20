@@ -1,9 +1,12 @@
-import logo from './logo.svg';
+
+import CreateAccount from './components/create-account/CreateAccount'
+
+
 
 function App() {
   return (
-    <div className="App">
-    h3
+    <div>
+      <CreateAccount />
     </div>
   );
 }

@@ -1,0 +1,18 @@
+<div className="md:flex w-3/3 text-justify px-20 py-5">
+      <h3 className='text-xl text-blue-dark'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non sint. Quam magnam impedit velit aperiam unde optio veniam cupiditate at, quod vitae cumque, eveniet eligendi maiores neque laborum doloremque.</h3>
+
+      <h3 className='text-xl my-10 md:my-0 md:mx-10 text-blue-dark'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non sint. Quam magnam impedit velit aperiam unde optio veniam cupiditate at, quod vitae cumque, eveniet eligendi maiores neque laborum doloremque.</h3>
+
+      <h3 className='text-xl text-blue-dark'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non sint. Quam magnam impedit velit aperiam unde optio veniam cupiditate at, quod vitae cumque, eveniet eligendi maiores neque laborum doloremque.</h3>
+
+
+
+
+
+      <img src={image3} alt="" className='w-full'/>
+        <div className='relative bottom-[101%] flex w-fit h-[100%] bg-blue-light m-auto'>
+          <div className="absolute m-auto">
+          <img src={logo} alt="" className=''/>
+          <h2 className=''>BORDERLESS WORSHIP</h2>
+          </div>
+        </div>
