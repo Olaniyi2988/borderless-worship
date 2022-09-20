@@ -9,8 +9,8 @@
     width: 100%;
     height: 100%;
     background-image:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
-    url(../../images/image-3.png);
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../../images/image-3.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
