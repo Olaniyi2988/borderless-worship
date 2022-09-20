@@ -1,10 +1,15 @@
+
 import React from 'react';
 import '../component-css/bg-side-img.css';
 import logo from '../../images/borderless-logo.svg'
 
-const CreateAccount = () => {
+
+
+
+const OtpConfitmation = () => {
   return (
     <div className='w-[100%] h-[100vh] flex'>
+
       <div className="md:w-[50%] md:block hidden">
         <div className="bg-image text-center">
           <span>
@@ -13,11 +18,10 @@ const CreateAccount = () => {
           </span>
         </div>
       </div>
-      <div className="w-[100%] md:w-[50%] flex items-center justify-center">
+
+      <div className="w-[100%] md:w-[50%] flex items-center justify-center text-center">
         <div className='w-[80%] md:w-[60%]'>
           <h3 className='font-bold text-3xl text-blue-dark'>Create an Account</h3>
-
-          <hr className='my-5 text-[#D3D3D3]' />
           
           <form className='flex flex-col gap-4'>
             <span className='flex flex-col'>
@@ -55,4 +59,4 @@ const CreateAccount = () => {
   )
 }
 
-export default CreateAccount
+export default OtpConfitmation
