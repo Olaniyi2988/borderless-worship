@@ -32,18 +32,6 @@ const OtpConfitmation = () => {
             <input className='w-[50px] rounded-md border-[2px] border-blue-light py-1 px-2 text-lg' type="text" />
             <input className='w-[50px] rounded-md border-[2px] border-blue-light py-1 px-2 text-lg' type="text" />
             </span>
-            <span className='space-x-5'>
-            <input className='w-[50px] rounded-md border-[2px] border-blue-light py-1 px-2 text-lg' type="text" />
-            <input className='w-[50px] rounded-md border-[2px] border-blue-light py-1 px-2 text-lg' type="text" />
-            <input className='w-[50px] rounded-md border-[2px] border-blue-light py-1 px-2 text-lg' type="text" />
-            <input className='w-[50px] rounded-md border-[2px] border-blue-light py-1 px-2 text-lg' type="text" />
-            </span>
-            <span className='space-x-5'>
-            <input className='w-[50px] rounded-md border-[2px] border-blue-light py-1 px-2 text-lg' type="text" />
-            <input className='w-[50px] rounded-md border-[2px] border-blue-light py-1 px-2 text-lg' type="text" />
-            <input className='w-[50px] rounded-md border-[2px] border-blue-light py-1 px-2 text-lg' type="text" />
-            <input className='w-[50px] rounded-md border-[2px] border-blue-light py-1 px-2 text-lg' type="text" />
-            </span>
 
             <span className=''>
                 <button className='rounded-xl bg-blue-light py-2 font-bold text-lg text-white' type="submit">Verify</button>
