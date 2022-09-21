@@ -4,7 +4,7 @@ import logo from '../../images/borderless-logo-blue.svg'
 
 
 
-const Splash = () => {
+const SplashScreen = () => {
   return (
     <div className='w-[100%] h-[100vh] flex items-center justify-center'>
       <div className="w-[10%] flex flex-col">
@@ -15,4 +15,4 @@ const Splash = () => {
   )
 }
 
-export default Splash
+export default SplashScreen
