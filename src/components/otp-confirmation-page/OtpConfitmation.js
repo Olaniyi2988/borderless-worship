@@ -39,12 +39,18 @@ const OtpConfitmation = () => {
 
           <form className='flex flex-col gap-5 w-[100%]' onSubmit={handleSubmit(onSubmit)}>
             <span className='space-x-2'>
-              <input className='w-[50px] rounded-md border-[2px] border-[#D3D3D3] py-1 px-2 text-lg'
-                {...register("text", { required: true })}
+              <input className='w-[50px] text-center rounded-md border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type='text'
+                {...register("text", { required: true, })}
               />
-              <input className='w-[50px] rounded-md border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="text" />
-              <input className='w-[50px] rounded-md border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="text" />
-              <input className='w-[50px] rounded-md border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="text" />
+              <input className='w-[50px] text-center rounded-md border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="text"  
+                 {...register("text", { required: true, })}
+              />
+              <input className='w-[50px] text-center rounded-md border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="text"  
+                 {...register("text", { required: true, })}
+              />
+              <input className='w-[50px] text-center rounded-md border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="text"  
+                 {...register("text", { required: true, })}
+              />
               {errors?.text?.type === "required" && <p className='text-red'>Please enter OTP to continue</p>}
             </span>
 
