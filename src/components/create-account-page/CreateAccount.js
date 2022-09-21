@@ -26,6 +26,7 @@ const CreateAccount = () => {
           </span>
         </div>
       </div>
+
       <div className="w-[100%] md:w-[50%] flex items-center justify-center">
         <div className='w-[80%] md:w-[60%]'>
           <h3 className='font-bold text-3xl text-blue-dark'>Create an Account</h3>

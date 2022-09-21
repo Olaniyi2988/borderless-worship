@@ -12,11 +12,11 @@ function App() {
   return (
     <div>
       <Splash />
-      {/* <ResetPassword /> */}
-      {/* <ForgotPassword /> */}
-      {/* <CreateAccount /> */}
-      {/* <OtpConfitmation /> */}
-      {/* <Login /> */}
+      <ResetPassword />
+      <ForgotPassword />
+      <CreateAccount />
+      <OtpConfitmation />
+      <Login />
     </div>
   );
 }
