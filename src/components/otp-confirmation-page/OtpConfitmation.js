@@ -23,17 +23,17 @@ const OtpConfitmation = () => {
         <div className='w-[80%] md:w-[60%]'>
           <h3 className='font-bold text-3xl text-blue-dark'>Verification Code</h3>
           
-          <p className='text-base my-5'>Check your email for a four digit confirmation code to verify and complete your sign up</p>
+          <p className='w-[60%] m-auto text-[14px] my-5'>Check your email for a four digit confirmation code to verify and complete your sign up</p>
 
-          <form className='flex flex-col gap-5'>
-            <span className='space-x-5'>
+          <form className='flex flex-col gap-5 w-[100%]'>
+            <span className='space-x-2'>
             <input className='w-[50px] rounded-md border-[2px] border-blue-light py-1 px-2 text-lg' type="text" />
             <input className='w-[50px] rounded-md border-[2px] border-blue-light py-1 px-2 text-lg' type="text" />
             <input className='w-[50px] rounded-md border-[2px] border-blue-light py-1 px-2 text-lg' type="text" />
             <input className='w-[50px] rounded-md border-[2px] border-blue-light py-1 px-2 text-lg' type="text" />
             </span>
 
-            <span className=''>
+            <span className='flex flex-col gap-5 w-[90%] md:w-[60%] m-auto justify-center'>
                 <button className='rounded-xl bg-blue-light py-2 font-bold text-lg text-white' type="submit">Verify</button>
                 <button className='rounded-xl bg-white border-[2px] border-blue-light py-2 font-bold text-lg text-blue-light' 
                 type="submit">Resend Code</button>
