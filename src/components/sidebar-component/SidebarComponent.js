@@ -12,7 +12,6 @@ const SidebarComponent = () => {
                     <hr className='my-5 border-t-[1px] w-full text-[#D3D3D3]' />
                 </div>
 
-
                 <div className='w-[100%] flex flex-col  justify-center'>
                     <ul className='flex flex-col space-y-1'>
                         <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
