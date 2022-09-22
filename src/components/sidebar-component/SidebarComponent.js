@@ -16,25 +16,25 @@ const SidebarComponent = () => {
                 <div>
                     <ul className='flex flex-col space-y-1'>
                         <li className='py-2 px-5 text-base rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
-                            <a href="/"><span className='mr-5'><ion-icon name="home"></ion-icon></span> Home</a>
+                            <a href="/"><span className='mr-5'><i class="fa-solid fa-house"></i></span> Home</a>
                         </li>
                         <li className='py-2 px-5 text-base rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
-                            <a href="/"><span className='mr-5'><ion-icon name="person"></ion-icon></span> Users</a>
+                            <a href="/"><span className='mr-5'><i class="fa-solid fa-user"></i></span> Users</a>
                         </li>
                         <li className='py-2 px-5 text-base rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
-                            <a href="/"><span className='mr-5'><ion-icon name="home"></ion-icon></span> Testimonial</a>
+                            <a href="/"><span className='mr-5'><i class="fa-solid fa-comments"></i></span> Testimonial</a>
                         </li>
                         <li className='py-2 px-5 text-base rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
-                            <a href="/"><span className='mr-5'><ion-icon name="home"></ion-icon></span> Prayer Request</a>
+                            <a href="/"><span className='mr-5'><i class="fa-solid fa-person-praying"></i></span> Prayer Request</a>
                         </li>
                         <li className='py-2 px-5 text-base rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
-                            <a href="/"><span className='mr-5'><ion-icon name="home"></ion-icon></span> Bulletin</a>
+                            <a href="/"><span className='mr-5'><i class="fa-solid fa-book-bible"></i></span> Bulletin</a>
                         </li>
                         <li className='py-2 px-5 text-base rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
-                            <a href="/"><span className='mr-5'><ion-icon name="search"></ion-icon></span> Discover</a>
+                            <a href="/"><span className='mr-5'><i class="fa-solid fa-magnifying-glass"></i></span> Discover</a>
                         </li>
                         <li className='py-2 px-5 text-base rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
-                            <a href="/"><span className='mr-5'><ion-icon name="play-circle"></ion-icon></span> Livestream</a>
+                            <a href="/"><span className='mr-5'><i class="fa-solid fa-circle-play"></i></span> Livestream</a>
                         </li>
                         <li className='py-2 px-5 text-base rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
                             <a href="/"><span className='mr-5'><ion-icon name="home"></ion-icon></span> Give</a>
