@@ -1,17 +1,8 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
 import '../component-css/bg-side-img.css';
 import logo from '../../images/borderless-logo-white.svg'
 
 const ForgotPassword = () => {
-    const {
-        register,
-        handleSubmit,
-        watch,
-        formState: { errors }
-    } = useForm();
-
-    const onSubmit = (data) => {};
 
 
     return (
@@ -32,15 +23,10 @@ const ForgotPassword = () => {
 
                     <hr className='my-5 text-[#D3D3D3]' />
 
-                    <form className='flex flex-col gap-6' onSubmit={handleSubmit(onSubmit)}>
+                    <form className='flex flex-col gap-6'>
                         <span className='flex flex-col'>
                             <label htmlFor="" className='font-bold text-base'>Email Address</label>
-                            <input 
-                                className='rounded-xl border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' 
-                                placeholder='Enter Email here' 
-                                {...register("email", {required: true})} 
-                            />
-                                {errors?.email?.type === "required" && <p className='text-red'>This field is required</p>}
+                            <input className='rounded-xl border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' placeholder='Enter Email here' />
                         </span>
 
                         <button className='rounded-xl bg-blue-light py-2 font-bold text-lg text-white' type="submit">Sign Up</button>

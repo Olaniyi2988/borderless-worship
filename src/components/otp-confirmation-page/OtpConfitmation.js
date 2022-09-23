@@ -1,5 +1,4 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
 import '../component-css/bg-side-img.css';
 import logo from '../../images/borderless-logo-white.svg'
 
@@ -7,17 +6,6 @@ import logo from '../../images/borderless-logo-white.svg'
 
 
 const OtpConfitmation = () => {
-
-
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors }
-  } = useForm();
-
-  const onSubmit = (data) => { };
-
 
   return (
     <div className='w-[100%] h-[100vh] flex'>
@@ -37,21 +25,12 @@ const OtpConfitmation = () => {
 
           <p className='w-[70%] m-auto text-base my-5'>Check your email for a four digit confirmation code to verify and complete your sign up</p>
 
-          <form className='flex flex-col gap-5 w-[100%]' onSubmit={handleSubmit(onSubmit)}>
+          <form className='flex flex-col gap-5 w-[100%]'>
             <span className='space-x-2'>
-              <input className='w-[50px] text-center rounded-md border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type='text'
-                {...register("text", { required: true, })}
-              />
-              <input className='w-[50px] text-center rounded-md border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="text"  
-                 {...register("text", { required: true, })}
-              />
-              <input className='w-[50px] text-center rounded-md border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="text"  
-                 {...register("text", { required: true, })}
-              />
-              <input className='w-[50px] text-center rounded-md border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="text"  
-                 {...register("text", { required: true, })}
-              />
-              {errors?.text?.type === "required" && <p className='text-red'>Please enter OTP to continue</p>}
+              <input className='w-[50px] text-center rounded-md border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type='text' />
+              <input className='w-[50px] text-center rounded-md border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="text" />
+              <input className='w-[50px] text-center rounded-md border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="text" />
+              <input className='w-[50px] text-center rounded-md border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="text" />
             </span>
 
             <span className='flex flex-col gap-5 w-[90%] md:w-[60%] m-auto justify-center'>

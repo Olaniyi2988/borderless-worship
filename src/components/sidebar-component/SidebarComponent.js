@@ -1,5 +1,7 @@
 import React from 'react'
 import logo from '../../images/borderless-logo-blue.svg'
+import { Link } from 'react-router-dom'
+import { PrayerRequest } from '../component'
 
 
 const SidebarComponent = () => {
@@ -18,30 +20,47 @@ const SidebarComponent = () => {
 
                 <div className=' flex flex-col  justify-center'>
                     <ul className='flex flex-col space-y-1'>
-                        <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
-                            <a href="/"><span className='mr-3'><i className="fa-solid fa-house"></i></span> Overview</a>
-                        </li>
-                        <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
-                            <a href="/"><span className='mr-3'><i className="fa-solid fa-user"></i></span> Users</a>
-                        </li>
-                        <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
-                            <a href="/"><span className='mr-3'><i className="fa-solid fa-comments"></i></span> Testimonial</a>
-                        </li>
-                        <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
-                            <a href="/"><span className='mr-3'><i className="fa-solid fa-person-praying"></i></span> Prayer Request</a>
-                        </li>
-                        <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
-                            <a href="/"><span className='mr-3'><i className="fa-solid fa-book-bible"></i></span> Bulletin</a>
-                        </li>
-                        <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
-                            <a href="/"><span className='mr-3'><i className="fa-solid fa-magnifying-glass"></i></span> Discover</a>
-                        </li>
-                        <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
-                            <a href="/"><span className='mr-3'><i className="fa-solid fa-circle-play"></i></span> Livestream</a>
-                        </li>
-                        <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
-                            <a href="/"><span className='mr-3'><ion-icon name="home"></ion-icon></span> Give</a>
-                        </li>
+                        <Link to='/'>
+                            <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
+                                <span className='mr-3'><i className="fa-solid fa-house"></i></span> Overview
+                            </li>
+                        </Link>
+                        <Link to='/user'>
+                            <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
+                                <span className='mr-3'><i className="fa-solid fa-user"></i></span> Users
+                            </li>
+                        </Link>
+                        <Link to='/testimonial'>
+                            <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
+                                <span className='mr-3'><i className="fa-solid fa-comments"></i></span> Testimonial
+                            </li>
+                        </Link>
+                        <Link to='/prayer-request'>
+                            <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
+                                <span className='mr-3'><i className="fa-solid fa-person-praying"></i></span> Prayer Request
+                            </li>
+                        </Link>
+                        <Link to='/bulletin'>
+                            <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
+                                <span className='mr-3'><i className="fa-solid fa-book-bible"></i></span> Bulletin
+                            </li>
+                        </Link>
+                        <Link to='/discover'>
+                            <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
+                                <span className='mr-3'><i className="fa-solid fa-magnifying-glass"></i></span> Discover
+                            </li>
+                        </Link>
+                        <Link to='/live-stream'>
+                            <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
+                                <span className='mr-3'><i className="fa-solid fa-circle-play"></i></span> Livestream
+                            </li>
+                        </Link>
+                        <Link to='/give'>
+                            <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
+                                <span className='mr-3'><ion-icon name="home"></ion-icon></span> Give
+                            </li>
+                        </Link>
+
                     </ul>
 
                 </div>
@@ -49,7 +68,7 @@ const SidebarComponent = () => {
                 <div className=' flex flex-col justify-center mt-44'>
                     <div className='flex flex-col'>
                         <p className='py-1 px-5 text-lg rounded-full text-red'>
-                            <a href="/"><span className='mr-3'><i class="fa-solid fa-right-from-bracket"></i></span> Logout</a>
+                            <span className='mr-3'><i class="fa-solid fa-right-from-bracket"></i></span> Logout
                         </p>
                     </div>
                 </div>

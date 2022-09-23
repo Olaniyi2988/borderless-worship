@@ -1,20 +1,8 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
 import '../component-css/bg-side-img.css';
 import logo from '../../images/borderless-logo-white.svg'
 
-const CreateAccount = () => {
-
-
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors }
-  } = useForm();
-
-  const onSubmit = (data) => { };
-
+const  CreateAccount = () => {
 
   return (
     <div className='w-[100%] h-[100vh] flex'>
@@ -33,45 +21,31 @@ const CreateAccount = () => {
 
           <hr className='my-5 text-[#D3D3D3]' />
 
-          <form className='flex flex-col gap-4' onSubmit={handleSubmit(onSubmit)}>
+          <form className='flex flex-col gap-4'>
             <span className='flex flex-col'>
               <label htmlFor="" className='font-bold text-base'>First Name</label>
-              <input className='rounded-xl border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="text" placeholder='Enter First Name here' 
-              {...register("fname", { required: true })}
-              />
-              {errors?.email?.type === "required" && <p className='text-red'>This field is required</p>}
+              <input className='rounded-xl border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="text" placeholder='Enter First Name here' />
+
             </span>
 
             <span className='flex flex-col'>
               <label htmlFor="" className='font-bold text-base'>Last Name</label>
-              <input className='rounded-xl border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="text" name="Lname" placeholder='Enter Last Name here'
-              {...register("lname", { required: true })}
-              />
-              {errors?.email?.type === "required" && <p className='text-red'>This field is required</p>}
+              <input className='rounded-xl border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="text" name="Lname" placeholder='Enter Last Name here' />
             </span>
 
             <span className='flex flex-col'>
               <label htmlFor="" className='font-bold text-base'>Email Address</label>
-              <input className='rounded-xl border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="email" name="Email" placeholder='Enter Email here'
-              {...register("email", { required: true })}
-              />
-              {errors?.email?.type === "required" && <p className='text-red'>This field is required</p>}
+              <input className='rounded-xl border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="email" name="Email" placeholder='Enter Email here' />
             </span>
 
             <span className='flex flex-col'>
               <label htmlFor="" className='font-bold text-base'>Password</label>
-              <input className='rounded-xl border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="password" name="Password" placeholder='Enter Password here'
-              {...register("password", { required: true })}
-              />
-              {errors?.email?.type === "required" && <p className='text-red'>This field is required</p>}
+              <input className='rounded-xl border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="password" name="Password" placeholder='Enter Password here' />
             </span>
 
             <span className='flex flex-col'>
               <label htmlFor="" className='font-bold text-base'>Confirm Password</label>
-              <input className='rounded-xl border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="password" name="Password" placeholder='Enter Password here'
-              {...register("password", { required: true })}
-              />
-              {errors?.email?.type === "required" && <p className='text-red'>This field is required</p>}
+              <input className='rounded-xl border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' type="password" name="Password" placeholder='Enter Password here' />
             </span>
 
             <button className='rounded-xl bg-blue-light py-2 font-bold text-lg text-white' type="submit">Sign Up</button>

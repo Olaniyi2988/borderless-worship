@@ -2,9 +2,9 @@ import React from 'react'
 
 const NavbarComponent = () => {
   return (
-    <div className='w-[100%] flex justify-between'>
+    <div className='w-full flex justify-between'>
       <div className='cursor-pointer'>
-        <i class="fa-solid fa-bars text-3xl"></i>
+        <i className="fa-solid fa-bars text-3xl"></i>
       </div>
 
       <div className='flex space-x-5 drop-shadow-xl py-3 px-7 rounded-full bg-white box-border float-left'>
