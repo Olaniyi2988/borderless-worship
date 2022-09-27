@@ -5,7 +5,7 @@ import logo from '../../images/borderless-logo-white.svg'
 
 
 
-const OtpConfitmation = () => {
+const OtpConfirmation = () => {
 
   return (
     <div className='w-[100%] h-[100vh] flex'>
@@ -45,4 +45,4 @@ const OtpConfitmation = () => {
   )
 }
 
-export default OtpConfitmation
+export default OtpConfirmation

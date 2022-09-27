@@ -22,7 +22,7 @@ const Login = () => {
 
                     <hr className='my-5 text-[#D3D3D3]' />
 
-                    <form className='flex flex-col gap-6' onSubmit={handleSubmit(onSubmit)}>
+                    <form className='flex flex-col gap-6'>
                         <span className='flex flex-col'>
                             <label htmlFor="" className='font-bold text-base'>Email Address</label>
                             <input 
