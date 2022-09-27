@@ -9,10 +9,10 @@ const Dashboard = () => {
         // <Router>
         <div className=" bg-body">
             <div className="flex">
-                <div className="w-1/6 bg-white lg:block hidden">
+                <div className="w-1/6 items-center justify-center flex bg-white">
                     <SidebarComponent />
                 </div>
-                <div className="w-full lg:w-5/6 px-10 py-5">
+                <div className="w-full h-screen lg:w-5/6 px-5 py-2 box-content ">
                     <div className="flex">
                         <NavbarComponent />
                     </div>

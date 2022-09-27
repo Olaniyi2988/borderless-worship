@@ -10,7 +10,7 @@ const SidebarComponent = () => {
         //     <h1>side bar</h1>
         // </div>
 
-        <div className='h-screen lg:block hidden bg-white z-50 fixed p-5'>
+        <div className='w-[15%] h-screen lg:block hidden bg-white z-50 fixed '>
             <div className="m-auto flex flex-col">
                 <div className='flex flex-col items-center justify-center'>
                     <img src={logo} alt="" className='w-20' />
