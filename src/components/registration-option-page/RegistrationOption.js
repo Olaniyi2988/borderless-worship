@@ -1,6 +1,7 @@
 import React from 'react'
 import '../component-css/bg-side-img.css';
 import logo from '../../images/borderless-logo-blue.svg'
+import { Link } from 'react-router-dom'
 
 
 
@@ -32,15 +33,17 @@ const RegistrationOption = () => {
                         </span>
                     </div>
 
-          
+
 
                     <form className='flex flex-col gap-6 mt-16'>
-                       
-                        <button className='rounded-xl bg-blue-light py-2 font-bold text-lg text-white' type="submit">Sign Up</button>
+                        <Link to='/create-account'>
+                            <button className='w-full rounded-xl bg-blue-light py-2 font-bold text-lg text-white' type="submit">Sign Up</button>
+                        </Link>
 
-                        <button className='rounded-xl border-[3px] py-2 font-bold text-lg text-blue-light' type="submit">Log In</button>
+                        <Link to='/login'>
+                            <button className='w-full rounded-xl border-[3px] py-2 font-bold text-lg text-blue-light' type="submit">Log In</button>
+                        </Link>
 
-                        
                     </form>
                 </div>
             </div>

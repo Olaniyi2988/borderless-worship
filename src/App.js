@@ -26,14 +26,14 @@ function App() {
         <Route path='splash-screen' element={<SplashScreen />} />
         <Route path='dashboard' element={<Dashboard />}>
           <Route index exact element={<Overview />} />
-          <Route path='/dashboard/overview' exact element={<Overview />} />
-          <Route path='/dashboard/discover' element={<Discover />} />
-          <Route path='/dashboard/testimonial' element={<Testimonial />} />
-          <Route path='/dashboard/prayer-request' element={<PrayerRequest />} />
-          <Route path='/dashboard/user' element={<User />} />
-          <Route path='/dashboard/live-stream' element={<LiveStream />} />
-          <Route path='/dashboard/give' element={<Give />} />
-          <Route path='/dashboard/bulletin' element={<Bulletin />} />
+          <Route path='overview' exact element={<Overview />} />
+          <Route path='discover' element={<Discover />} />
+          <Route path='testimonial' element={<Testimonial />} />
+          <Route path='prayer-request' element={<PrayerRequest />} />
+          <Route path='user' element={<User />} />
+          <Route path='live-stream' element={<LiveStream />} />
+          <Route path='give' element={<Give />} />
+          <Route path='bulletin' element={<Bulletin />} />
         </Route>
       </Routes>
     </Router>

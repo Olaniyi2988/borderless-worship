@@ -10,9 +10,9 @@ const SidebarComponent = () => {
         //     <h1>side bar</h1>
         // </div>
 
-        <div className='w-full p-5 bg-white md:block hidden '>
-            <div className=" m-auto flex flex-col">
-                <div className=' flex flex-col items-center justify-center'>
+        <div className='h-screen lg:block hidden bg-white z-50 fixed p-5'>
+            <div className="m-auto flex flex-col">
+                <div className='flex flex-col items-center justify-center'>
                     <img src={logo} alt="" className='w-20' />
                     <h1 className='font-extrabold text-[15px] text-blue-dark mt-5 text-center'>BORDERLESS <br /> WORSHIP</h1>
                     <hr className='my-5 border-t-[1px] w-full text-[#D3D3D3]' />
@@ -20,42 +20,42 @@ const SidebarComponent = () => {
 
                 <div className=' flex flex-col  justify-center'>
                     <ul className='flex flex-col space-y-1'>
-                        <Link to='/dashboard/overview'>
+                        <Link to='overview'>
                             <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
                                 <span className='mr-3'><i className="fa-solid fa-house"></i></span> Overview
                             </li>
                         </Link>
-                        <Link to='/dashboard/user'>
+                        <Link to='user'>
                             <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
                                 <span className='mr-3'><i className="fa-solid fa-user"></i></span> Users
                             </li>
                         </Link>
-                        <Link to='/dashboard/testimonial'>
+                        <Link to='testimonial'>
                             <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
                                 <span className='mr-3'><i className="fa-solid fa-comments"></i></span> Testimonial
                             </li>
                         </Link>
-                        <Link to='/dashboard/prayer-request'>
+                        <Link to='prayer-request'>
                             <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
                                 <span className='mr-3'><i className="fa-solid fa-person-praying"></i></span> Prayer Request
                             </li>
                         </Link>
-                        <Link to='/dashboard/bulletin'>
+                        <Link to='bulletin'>
                             <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
                                 <span className='mr-3'><i className="fa-solid fa-book-bible"></i></span> Bulletin
                             </li>
                         </Link>
-                        <Link to='/dashboard/discover'>
+                        <Link to='discover'>
                             <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
                                 <span className='mr-3'><i className="fa-solid fa-magnifying-glass"></i></span> Discover
                             </li>
                         </Link>
-                        <Link to='/dashboard/live-stream'>
+                        <Link to='live-stream'>
                             <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
                                 <span className='mr-3'><i className="fa-solid fa-circle-play"></i></span> Livestream
                             </li>
                         </Link>
-                        <Link to='/dashboard/give'>
+                        <Link to='give'>
                             <li className='py-1 px-5 text-lg rounded-full text-blue-dark hover:bg-blue-dark hover:text-white'>
                                 <span className='mr-3'><ion-icon name="home"></ion-icon></span> Give
                             </li>
@@ -65,10 +65,12 @@ const SidebarComponent = () => {
 
                 </div>
 
-                <div className=' flex flex-col justify-center mt-44'>
+                <div className=' flex flex-col justify-center mt-10 lg:mt-44 cursor-pointer'>
                     <div className='flex flex-col'>
                         <p className='py-1 px-5 text-lg rounded-full text-red'>
-                            <span className='mr-3'><i class="fa-solid fa-right-from-bracket"></i></span> Logout
+                            <Link to='/registration-option'>
+                                <span className='mr-3'><i class="fa-solid fa-right-from-bracket"></i></span> Logout
+                            </Link>
                         </p>
                     </div>
                 </div>

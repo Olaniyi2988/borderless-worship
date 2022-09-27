@@ -1,8 +1,9 @@
 import React from 'react';
 import '../component-css/bg-side-img.css';
 import logo from '../../images/borderless-logo-white.svg'
+import {Link} from 'react-router-dom'
 
-const  CreateAccount = () => {
+const CreateAccount = () => {
 
   return (
     <div className='w-[100%] h-[100vh] flex'>
@@ -50,7 +51,11 @@ const  CreateAccount = () => {
 
             <button className='rounded-xl bg-blue-light py-2 font-bold text-lg text-white' type="submit">Sign Up</button>
 
-            <p className='text-center'>Have an account already? <span className='ml-4 text-blue-light cursor-pointer' href='/'>LOG IN</span></p>
+            <p className='text-center'>Have an account already?
+              <Link to='/login'>
+                <span className='ml-4 text-blue-light cursor-pointer'>LOG IN</span>
+              </Link>
+            </p>
           </form>
         </div>
       </div>
