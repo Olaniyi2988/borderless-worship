@@ -10,7 +10,7 @@ const SidebarComponent = () => {
         //     <h1>side bar</h1>
         // </div>
 
-        <div className='w-[15%] h-screen lg:block hidden bg-white z-50 fixed '>
+        <div className='w-full h-screen bg-white p-5'>
             <div className="m-auto flex flex-col">
                 <div className='flex flex-col items-center justify-center'>
                     <img src={logo} alt="" className='w-20' />
@@ -65,7 +65,7 @@ const SidebarComponent = () => {
 
                 </div>
 
-                <div className=' flex flex-col justify-center mt-10 lg:mt-44 cursor-pointer'>
+                <div className=' flex flex-col justify-center mt-48 cursor-pointer'>
                     <div className='flex flex-col'>
                         <p className='py-1 px-5 text-lg rounded-full text-red'>
                             <Link to='/registration-option'>
