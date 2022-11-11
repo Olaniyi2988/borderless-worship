@@ -1,5 +1,4 @@
 import React from 'react'
-import { Overview, Bulletin, Discover, Give, LiveStream, PrayerRequest, Testimonial, User } from '../component'
 import SidebarComponent from "../sidebar-component/SidebarComponent";
 import NavbarComponent from "../navbar-component/NavbarComponent";
 import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom'

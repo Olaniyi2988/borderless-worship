@@ -2,6 +2,7 @@ import React from 'react';
 import '../component-css/bg-side-img.css';
 import logo from '../../images/borderless-logo-white.svg'
 
+import {Link} from 'react-router-dom'
 
 const Login = () => {
 
@@ -25,23 +26,26 @@ const Login = () => {
                     <form className='flex flex-col gap-6'>
                         <span className='flex flex-col'>
                             <label htmlFor="" className='font-bold text-base'>Email Address</label>
-                            <input 
-                                className='rounded-xl border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' 
-                                placeholder='Enter Email here' 
+                            <input
+                                className='rounded-xl border-[2px] border-[#D3D3D3] py-1 px-2 text-lg'
+                                placeholder='Enter Email here'
                             />
                         </span>
 
                         <span className='flex flex-col'>
                             <label htmlFor="" className='font-bold text-base'>Password</label>
-                            <input 
-                                className='rounded-xl border-[2px] border-[#D3D3D3] py-1 px-2 text-lg' 
+                            <input
+                                className='rounded-xl border-[2px] border-[#D3D3D3] py-1 px-2 text-lg'
                                 placeholder='Enter Password here'
                             />
                         </span>
 
-                        <button className='rounded-xl bg-blue-light py-2 font-bold text-lg text-white' type="submit">Sign Up</button>
+                        <button className='rounded-xl bg-blue-light py-2 font-bold text-lg text-white' type="submit">Login</button>
 
-                        <p className='text-center'>Have an account already? <span className='ml-4 text-blue-light cursor-pointer' href='/'>SIGH UP</span></p>
+                        <p className='text-center'>Have an account already?
+                            <Link to='/create-account'>
+                                <span className='ml-4 text-blue-light cursor-pointer'>SIGH UP</span>
+                            </Link></p>
                     </form>
                 </div>
             </div>
